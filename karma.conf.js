@@ -1,3 +1,4 @@
+var path = require('path');
 module.exports = function (config) {
   config.set({
     // base path used to resolve all patterns
@@ -15,7 +16,7 @@ module.exports = function (config) {
 
     plugins: [
       require("karma-chai"),
-      require("karma-chrome-launcher"),
+      require("karma-firefox-launcher"),
       require("karma-mocha"),
       require("karma-mocha-reporter"),
       require("karma-sourcemap-loader"),
@@ -30,9 +31,13 @@ module.exports = function (config) {
       devtool: 'inline-source-map',
       module: {
         loaders: [
-          { test: /\.js/, exclude: [/app\/lib/, /node_modules/], loader: 'babel' },
-          { test: /\.html/, loader: 'raw' },
-          { test: /\.styl$/, loader: 'style!css!stylus' },
+          { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
+          { test: /\.html$/, loader: 'raw' },
+          { test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff' },
+          { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream' },
+          { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
+          { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml' },
+          { test: /\.(sass|scss)$/, loader: 'style!css!sass?includePaths[]=' + path.resolve(__dirname, './node_modules/compass-mixins/lib')},
           { test: /\.css$/, loader: 'style!css' }
         ]
       }
@@ -60,7 +65,7 @@ module.exports = function (config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['Firefox'],
 
     // if true, Karma runs tests once and exits
     singleRun: true
