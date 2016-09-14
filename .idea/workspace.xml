@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="984d5f49-439e-448a-8634-1e1fbebf171b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/components.js" afterPath="$PROJECT_DIR$/client/app/components/components.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/pokemonlist/pokemonlist.controller.js" afterPath="$PROJECT_DIR$/client/app/components/pokemonlist/pokemonlist.controller.js" />
     </list>
     <ignored path="pokedex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -319,7 +317,7 @@
       <workItem from="1473269992475" duration="6325000" />
       <workItem from="1473280530921" duration="237000" />
       <workItem from="1473701912774" duration="6836000" />
-      <workItem from="1473875595911" duration="9222000" />
+      <workItem from="1473875595911" duration="9249000" />
     </task>
     <task id="LOCAL-00001" summary="Communicating with an API">
       <created>1473875742561</created>
@@ -328,15 +326,22 @@
       <option name="project" value="LOCAL" />
       <updated>1473875742561</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Build the Pokemon view page">
+      <created>1473886238293</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1473886238293</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26890000" />
+    <option name="totallyTimeSpent" value="26917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2807351" sideWeight="0.5121951" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28144854" sideWeight="0.4878049" order="0" side_tool="false" content_ui="combo" />
@@ -344,7 +349,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2807351" sideWeight="0.5121951" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39434725" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -411,7 +416,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Communicating with an API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Communicating with an API" />
+    <MESSAGE value="Build the Pokemon view page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build the Pokemon view page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
