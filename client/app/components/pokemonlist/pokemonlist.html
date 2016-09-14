@@ -2,6 +2,7 @@
 <div class="container main-container">
   <ul
     class="pokemon-list"
+    infinite-scroll="$ctrl.getMore()"
   >
     <pokemonpreview
       ng-repeat="pokemon in $ctrl.pokemons | orderBy: 'id'"
@@ -9,7 +10,8 @@
     ></pokemonpreview>
   </ul>
 
-  <div class="row">
+
+  <div class="row" ng-show="!$ctrl.gettingPokemons">
     <div class="col-sm-2 col-sm-offset-5">
       <button
         ng-click="$ctrl.getMore()"
@@ -17,4 +19,14 @@
       >LOAD MORE</button>
     </div>
   </div>
+
+  <div class="row" ng-show="$ctrl.gettingPokemons">
+    <div class="spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
 </div>
