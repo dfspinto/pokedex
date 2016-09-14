@@ -13,15 +13,15 @@ class PokemonlistController {
 
     // make the injected service available in other functions
     this._pokeapiClientService = pokeapiClientService;
-}
+  }
 
   getMore () {
     if(!this.gettingPokemons){
       this.gettingPokemons = true;
       this._pokeapiClientService.getPokemons(this.pokemons.length, (err, pokemons) => {
-        Array.prototype.push.apply(this.pokemons, pokemons);
-      this.gettingPokemons = false;
-    });
+          Array.prototype.push.apply(this.pokemons, pokemons);
+          this.gettingPokemons = false;
+      });
     }
   }
 
